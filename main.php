@@ -12,7 +12,7 @@ if(isset($_GET['first']) && isset($_GET['last']) && isset($_GET['age'])){
     $message = "I am old enough to vote in the United States";
 
     if($age < 18){
-        $message = "I am not old enough to vote in the United States";
+        $message = "Sadly, I am not old enough to vote in the United States";
     }
 
 } else {
