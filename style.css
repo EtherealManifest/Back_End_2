@@ -1,0 +1,11 @@
+h1{
+    border: 2px inset cornflowerblue;
+    background:linear-gradient(snow, steelblue);
+    padding: 0px;
+    margin: 10% 30%;
+    text-align:center;
+    color: navy;
+}
+body{
+    background-image: radial-gradient(snow, steelblue);
+}
