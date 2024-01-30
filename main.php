@@ -2,8 +2,17 @@
 $success = true;
 if(isset($_GET['first']) && isset($_GET['last']) && isset($_GET['age'])){
     $firstName = filter_input(INPUT_GET, 'first', FILTER_SANITIZE_SPECIAL_CHARS);
+    if($firstName ==""){
+        $firstName = "Nothing..? ";
+    }
     $lastName = filter_input(INPUT_GET, 'last', FILTER_SANITIZE_SPECIAL_CHARS);
+    if($lastName ==""){
+        $lastName = "Nothing..? ";
+    }
     $age = filter_input(INPUT_GET, 'age', FILTER_SANITIZE_SPECIAL_CHARS);
+    if($age ==NULL){
+        $age = 0;
+    }
 
     $fullname = $firstName . ' '. $lastName;
 
